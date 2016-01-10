@@ -7,7 +7,8 @@ Exporing the taste dimension of [Kona beer](http://konabrewingco.com/)
 
 |   |   |
 |---|---|
-|![](./images/map.png)   |![](./images/beer_types.png)   |
+| ![](./images/map.png)   | ![](./images/beer_types.png)   |  
+| | |
 
 
 ## Selected Graphs
