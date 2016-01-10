@@ -44,6 +44,7 @@ input_beer <- c(
 m <- matrix(input_beer, nrow =13, ncol=6, byrow = T)
 ds <- as.data.frame(m, stringsAsFactors = F)
 colnames(ds) <- c("beer","brew", "bitterness", "alcohol", "gravity", "type")
+ds <- ds[,c("beer", "brew", "type", "bitterness", "alcohol", "gravity")]
 
 
 # ---- tweak_data --------------------------------------------------------------
@@ -71,26 +72,9 @@ beer_color_type <- c(
 
 # ---- compute_distance --------------------------------------------------------
 
+cor(ds$gravity, ds$alcohol)
 
-# ---- scatter_1 -----------------------------------------------------------
 
-g <- ggplot2::ggplot(ds, aes(x=bitterness, y=alcohol, fill=type)) + 
-  geom_point(aes(size=gravity), shape=21) +
-  geom_text(aes(label = beer, hjust = -0.15)) +
-  # scale_fill_manual(values = beer_color_type) +
-  main_theme 
-  
-g 
-
-# ---- scatter_2 -----------------------------------------------------------
-
-g <- ggplot2::ggplot(ds, aes(x=gravity, y=alcohol)) + 
-  geom_point(aes(shape=type)) +
-  geom_text(aes(label = beer, hjust = -0.15)) +
-  scale_fill_manual(values = beer_color_type) +
-  main_theme 
-
-g 
 
 # ---- save_to_disk ------------------------------------------------------------
 # Save as a compress, binary R dataset.  It's no longer readable with a text editor, but it saves metadata (eg, factor information).

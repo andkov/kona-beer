@@ -15,13 +15,13 @@ Exporing the taste dimension of [Kona beer](http://konabrewingco.com/)
 
 ![](./analysis/figure-png/scatter_1-1.png)
 
-![](./analysis/figure-png/scatter_1-2.png)
+![](./analysis/figure-png/scatter_2-1.png)
 
-![](./analysis/figure-png/scatter_1-3.png)
+![](./analysis/figure-png/scatter_3-1.png)
 
-![](./analysis/figure-png/scatter_1-4.png)
+![](./analysis/figure-png/scatter_4-1.png)
 
-![](./analysis/figure-png/scatter_1-5.png)
+![](./analysis/figure-png/scatter_5-1.png)
 
 
 

@@ -60,13 +60,38 @@ read_chunk("./analysis/kona-beer.R") #This allows knitr to call chunks tagged in
 ```
 See [html version](./analysis/kona-beer.html)
 
+## Data
+The data for each beer were collected from the official Kona Brewery [website](http://konabrewingco.com/). 
+
+```{r echo=FALSE}
+kable(ds)
+```
+
+
 
 ##1
 ```{r scatter_1, echo=echoChunks, results='show', message=FALSE, warning=FALSE, fig.width=10, fig.height=8}
+g <- ggplot2::ggplot(ds, aes(x=bitterness, y=alcohol, fill=type)) + 
+  geom_point(shape=21, size=6) +
+  geom_text(aes(label = beer, hjust = -0.15)) +
+  main_theme 
+g 
+
 ```
 
 ##2
+Keep in mind that alcohol (ABV - alcohol by volume) and gravity (original gravity) are higly correlated
+
 ```{r scatter_2, echo=echoChunks, results='show', message=FALSE, warning=FALSE, fig.width=10, fig.height=8}
+d <- ds[!ds$beer == "Kua Bay" ,]
+g <- ggplot2::ggplot(d, aes(x=gravity, y=alcohol, fill=type)) + 
+  geom_point(shape=21, size=6) +
+  geom_text(aes(label = beer, hjust = -0.15)) +
+  main_theme 
+g 
+
+cor(d$alcohol, d$gravity)
+
 ```
 
 
