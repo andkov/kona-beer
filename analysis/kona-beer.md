@@ -28,7 +28,7 @@ Warning: package 'ggplot2' was built under R version 3.2.3
 
 <!-- Tweak the datasets.   -->
 
-See [html version](./kona-beer.html)
+See [html version](http://htmlpreview.github.io/?https://github.com/andkov/kona-beer/blob/master/analysis/kona-beer.html)
 
 ## Data
 The data for each beer were collected from the official Kona Brewery [website](http://konabrewingco.com/). 
@@ -71,7 +71,7 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 ```
-Report rendered by koval_000 at 2016-01-10, 09:09 -0800
+Report rendered by koval_000 at 2016-01-10, 09:14 -0800
 ```
 
 ```

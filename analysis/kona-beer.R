@@ -72,7 +72,6 @@ beer_color_type <- c(
 
 # ---- compute_distance --------------------------------------------------------
 
-cor(ds$gravity, ds$alcohol)
 
 
 

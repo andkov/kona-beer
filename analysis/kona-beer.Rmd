@@ -39,7 +39,7 @@ read_chunk("./analysis/kona-beer.R") #This allows knitr to call chunks tagged in
 ```
 
 <!-- Load 'sourced' R files.  Suppress the output when loading packages. --> 
-```{r load_packages, echo=echoChunks, message=FALSE}
+```{r load_packages, echo=echoChunks, message=FALSE, warning=FALSE}
 ```
 
 <!-- Load any global functions and variables declared in the R file.  Suppress the output. --> 
@@ -58,7 +58,7 @@ read_chunk("./analysis/kona-beer.R") #This allows knitr to call chunks tagged in
 <!-- Tweak the datasets.   -->
 ```{r tweak_data, echo=echoChunks, results='show', message=FALSE}
 ```
-See [html version](./kona-beer.html)
+See [html version](http://htmlpreview.github.io/?https://github.com/andkov/kona-beer/blob/master/analysis/kona-beer.html)
 
 ## Data
 The data for each beer were collected from the official Kona Brewery [website](http://konabrewingco.com/). 
