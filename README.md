@@ -5,6 +5,7 @@ Exporing the taste dimension of [Kona beer](http://konabrewingco.com/)
 
 - see [full report](./analysis/kona-beer.md) 
 
+|   |   |
 |---|---|
 |![](./images/map.png)   |![](./images/beer_types.png)   |
 
