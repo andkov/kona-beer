@@ -95,6 +95,15 @@ cor(d$alcohol, d$gravity)
 ```
 
 
+##3
+```{r scatter_3, echo=echoChunks, results='show', message=FALSE, warning=FALSE, fig.width=10, fig.height=8}
+g <- ggplot2::ggplot(ds, aes(x=bitterness, y=alcohol, fill=type)) + 
+  geom_point(shape=21, size=6) +
+  geom_text(aes(label = beer, hjust = -0.15)) +
+  main_theme 
+g  
+```
+
 # Session Information
 For the sake of documentation and reproducibility, the current report was rendered on a system using the following software.
 
